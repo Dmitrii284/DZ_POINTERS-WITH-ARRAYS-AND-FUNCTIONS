@@ -14,8 +14,8 @@ void mass(int *arr, const int length) {
 void p_mass(int *arr, const int length) {
 	
 	for (int i = 0; i < length - 1; i++)
-		if (*(arr +1) % 2 == 0) 		
-			std::swap(*arr, *(arr + 1));
+		if (i % 2 == 0) 		
+			std::swap(*arr, *(arr + 1));			
 }
 int main() {
 	setlocale(LC_ALL, "Rus");
